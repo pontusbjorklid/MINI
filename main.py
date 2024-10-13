@@ -5,7 +5,7 @@ from flask import request
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
-# Define question flow (a decision tree)
+# Define question flow
 questions = {
     1: {"text": "Do you like programming?", "yes": 2, "no": 3},
     2: {"text": "Do you prefer Python?", "yes": 4, "no": 5},
